@@ -8,37 +8,45 @@
 
 /* Office-Themed Background */
 body {
-    background-color: #f4f4f4; /* Light Gray */
+    background-color: #ffffff; /* White Background */
     color: #333; /* Dark text */
 }
 
-/* Header Styling */
+/* Header Styling - Dark Smooth Gradient */
 header {
-    background: linear-gradient(to bottom, #000033, navy, #000033); /* Vertical Gradient */
+    background: linear-gradient(to bottom, 
+        #000022 0%, 
+        #000033 20%, 
+        #000044 40%, 
+        #000055 70%, 
+        #001166 100%);
     color: white;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 header:hover {
-    background: linear-gradient(to bottom, #000022, #001a66, #000022);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom, 
+        #000011 0%, 
+        #000022 20%, 
+        #000033 40%, 
+        #000044 70%, 
+        #001155 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Navigation Bar */
+/* Navigation Bar - Uniform Black */
 #nav_bar ul {
-    background: linear-gradient(to bottom, black, #222, black); /* Vertical Gradient */
+    background: black;
     color: white;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
     height: 2.5rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: background 0.3s ease;
     list-style: none;
     padding: 0;
@@ -50,12 +58,11 @@ header:hover {
     padding: 0.7rem 1.5rem;
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 5px;
 }
 
 #nav_bar ul li a:hover {
     background-color: red;
-    color: black;
+    color: white;
 }
 
 /* Profile Picture */
@@ -66,10 +73,10 @@ header:hover {
     margin: 10px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Box Lines - Custom Class */
+/* Box Lines - Clean & Minimal */
 .box_lines {
     display: block;
     border: 2px solid black;
@@ -83,33 +90,38 @@ header:hover {
     background-color: #B0D4FF; /* Slightly More Blue */
 }
 
-/* Form Styling */
+/* Form Styling - Darker Contrast */
 form {
-    background-color: white;
+    background: linear-gradient(to bottom, white 0%, #f0f0f0 50%, white 100%);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form:hover {
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #f9f9f9 0%, #e6e6e6 50%, #f9f9f9 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* 📱 Mobile View: Darker & Compact */
+/* 📱 Mobile View: Darker Navbar, Light Background */
 @media (max-width: 900px) {
     body {
-        background-color: #d9d9d9; /* Darker Gray */
+        background-color: #ffffff;
     }
 
     header {
-        background: linear-gradient(to bottom, black, #000033, black);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        background: linear-gradient(to bottom, 
+            black 0%, 
+            #000011 20%, 
+            #000022 40%, 
+            #000033 70%, 
+            #001144 100%);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     }
 
     #nav_bar ul {
-        background: linear-gradient(to bottom, #111, #222, #111);
+        background: black;
     }
 
     #nav_bar ul li a:hover {
@@ -123,31 +135,35 @@ form:hover {
     }
 
     form {
-        background-color: #ddd;
+        background: linear-gradient(to bottom, #ddd 0%, #ccc 50%, #ddd 100%);
         padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
 
     form:hover {
-        background-color: #ccc;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        background: linear-gradient(to bottom, #ccc 0%, #bbb 50%, #ccc 100%);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 }
 
 /* 🖥️ Large Screens: Professional Look */
 @media (min-width: 901px) {
     body {
-        background-color: #f4f4f4;
+        background-color: #ffffff;
     }
 
     header {
-        background: linear-gradient(to bottom, #000033, navy, #000033);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to bottom, 
+            #000022 0%, 
+            #000033 20%, 
+            #000044 40%, 
+            #000055 70%, 
+            #001166 100%);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     }
 
     #nav_bar ul {
-        background: linear-gradient(to bottom, black, #222, black);
+        background: black;
     }
 
     #nav_bar ul li a:hover {
@@ -161,14 +177,13 @@ form:hover {
     }
 
     form {
-        background-color: white;
+        background: linear-gradient(to bottom, white 0%, #f0f0f0 50%, white 100%);
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     form:hover {
-        background-color: #f0f0f0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to bottom, #f0f0f0 0%, #e6e6e6 50%, #f0f0f0 100%);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     }
 }
