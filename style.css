@@ -108,6 +108,7 @@ form:hover {
 @media (max-width: 900px) {
     body {
         background-color: #ffffff;
+        font-size: calc(100% - 3px); /* Decrease font size by 3px */
     }
     #header_details{
         display: none;
@@ -154,6 +155,7 @@ form:hover {
 @media (min-width: 901px) {
     body {
         background-color: #ffffff;
+        font-size: calc(100% + 3px); /* Increase font size by 3px */
     }
     /* #header_details{
         display: none;
